@@ -10,7 +10,7 @@ const planets = [
 ];
 
 const goldilocksZone = planets.filter(planet => 
-	planet.temperature >= 273 && planet.temperature <= 323 &&
+	planet.temperature >= 253 && planet.temperature <= 323 &&
 	planet.distance >= 0.75 && planet.distance <= 1.5
 )
 
