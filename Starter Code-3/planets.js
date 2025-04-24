@@ -8,3 +8,12 @@ const planets = [
 	{name: "Uranus", temperature: 78, distance: 19.22},
 	{name: "Neptune", temperature: 73, distance: 30.05}
 ];
+
+const goldilocksZone = planets.filter(planet => 
+	planet.temperature >= 273 && planet.temperature <= 323 &&
+	planet.distance >= 0.75 && planet.distance <= 1.5
+)
+
+	.map(planet => planet.name);
+
+console.log("Planets in the Goldilocks Zone: ", goldilocksZone);
